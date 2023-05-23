@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + TS</title>
+
+    <script type="module">
+      import { hello } from '/src/main.ts'
+
+      const process = () => {
+        document.querySelector('#app').innerHTML = hello()
+      }
+
+      window.addEventListener('DOMContentLoaded', process)
+    </script>
+  </head>
+  <body>
+    <h1>dev mode</h1>
+    <p><a href="/pages/build.html">to build mode</a></p>
+    <div id="app"></div>
+  </body>
+</html>
